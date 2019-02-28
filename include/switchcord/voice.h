@@ -35,6 +35,21 @@ namespace switchcord {
     // 3?
     kPriority = 4,
   };
+  
+  enum VoiceOpcodes {
+    kIdentify = 0,
+    kSelectProtocol = 1,
+    kReady = 2,
+    kHeartbeat = 3,
+    kSessionDescription = 4,
+    kSpeaking = 5,
+    kHeartbeatAck = 6,
+    kResume = 7,
+    kHello = 8,
+    kResumed = 9,
+    kClientConnect = 12,
+    kClientDisconnect = 13,
+  };
 }
 
 #endif // SWITCHCORD_INCLUDE_VOICE_H_
